@@ -1,38 +1,96 @@
+:root{
+  background-color: lightskyblue;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.results{
+  position: relative;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+select{
+  margin: 1em;
+  width: 35%;
+  margin-top: 2em;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchSection {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 100px;
+  margin: 0 30%;
 }
 
-.App-link {
-  color: #61dafb;
+#searchBar{
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#searchBar:hover, #searchBar:focus {
+  border: 1.5px solid #009688;
+  background-color: white;
+}
+
+#searchIcon{
+  margin-left: 3px;
+  height: 25px;
+}
+
+#instructions{
+  font-size: small;
+  font-weight: 300;
+}
+
+.recipe{
+  border: 3px solid black;
+  margin: 2em;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+button{
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px){
+  select{
+    width: 35%;
+    margin-top: 2em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .recipe{
+    display: inline-block;
+    width: 40%;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 992px){
+  select{
+    width: 20%;
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .recipe{
+    display: inline-block;
+    width: 30%;
+    margin-right: 1em;
+    margin-left: 1em;
+    height: 30%;
   }
 }
