@@ -3,3 +3,9 @@ img{
     height: 200px;
     position: relative;
 }
+
+h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
